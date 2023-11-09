@@ -13,10 +13,9 @@ Some included features:
  - Visual selectable rows.
  - RWD (responsive web design).
 
-File naming format for (JSON) data: [MODEL]_[Headers/Table/Hierarchy].json
-
 [Data](https://github.com/MikeBidinger/Tabulator/tree/main/data) (JSON) format:
- - Headers data:
+ - File naming format for (JSON) data: [MODEL]_[Headers/Table/Hierarchy].json
+ - [Headers](https://github.com/MikeBidinger/Tabulator/tree/main/data/MODE_Header.json) data:
 ```JSON
 {
   "fixed_header": "column_name_1",
