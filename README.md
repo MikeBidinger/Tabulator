@@ -15,7 +15,7 @@ Some included features:
 
 [Data](data) (JSON) format:
  - File naming format for (JSON) data: [MODEL]_[Headers/Table/Hierarchy].json
- - [Headers](https://github.com/MikeBidinger/Tabulator/blob/main/data/MOD_Headers.json) data:
+ - [Headers](data/MOD_Headers.json) data:
 ```JSON
 {
   "fixed_header": "column_name_1",
@@ -25,14 +25,14 @@ Some included features:
   ]
 }
 ```
- - [Tabular](https://github.com/MikeBidinger/Tabulator/blob/main/data/MOD_Table.json) data:
+ - [Tabular](data/MOD_Table.json) data:
 ```JSON
 [
   {"column_name": "row_1_value"},
   {"column_name": "row_2_value"}
 ]
 ```
- - [Hierarchical](https://github.com/MikeBidinger/Tabulator/blob/main/data/MOD_Hierarchy.json) data:
+ - [Hierarchical](data/MOD_Hierarchy.json) data:
 ```JSON
 [
   {
