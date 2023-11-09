@@ -3,5 +3,12 @@ Flexible and responsive Font-End visualisation of JSON formatted data (data stru
 Including a Back-End solution to extract, transform and load data as JSON tabular data and/or JSON hierarhical data.
 
 Some included features:
- - A
- - B
+ - Multiple view options:
+   - Table: tabular data view.
+   - Hierarchy: hierarchical data view.
+ - Multiple source options (different model data).
+ - Column selection (show/hide)
+ - Saving column selection (including column widths).
+ - Multiple filter options.
+ - Visual selectable rows.
+ - RWD (responsive web design).
