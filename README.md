@@ -14,7 +14,9 @@ Some included features:
  - RWD (responsive web design).
 
 Data (JSON) format:
+```
 [
  {column_name: row_1_value},
  {column_name: row_2_value}
 ]
+```
