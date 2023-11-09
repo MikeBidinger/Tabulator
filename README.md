@@ -13,6 +13,8 @@ Some included features:
  - Visual selectable rows.
  - RWD (responsive web design).
 
+File naming format for (JSON) data: [MODEL]_[Headers/Table/Hierarchy].json
+
 Data (JSON) format:
  - Tabular:
 ```JSON
