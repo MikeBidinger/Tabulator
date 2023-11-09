@@ -13,7 +13,7 @@ Some included features:
  - Visual selectable rows.
  - RWD (responsive web design).
 
-Data JSON format:
+Data (JSON) format:
 [
  {column_name: row_1_value},
  {column_name: row_2_value}
