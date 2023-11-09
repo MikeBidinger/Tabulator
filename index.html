@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- ToDo:
+        Add multiple filter options: https://tabulator.info/docs/5.5/filter#manage
+        Download: https://tabulator.info/examples/5.5#download
+        Clipboard: https://tabulator.info/examples/5.5#clipboard
+    -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Product Structure Data</title>
+        <link href="all.css" rel="stylesheet" />
+        <link
+            href="https://unpkg.com/tabulator-tables/dist/css/tabulator_midnight.min.css"
+            rel="stylesheet"
+        />
+        <script
+            type="text/javascript"
+            src="https://unpkg.com/tabulator-tables/dist/js/tabulator.min.js"
+        ></script>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="top-bar">
+            <div id="selection" class="selection">
+                <select id="table-selection" onchange="initTable()"></select>
+                <select id="model-selection" onchange="initTable()"></select>
+                <button id="load-data" onclick="loadData()">Load Data</button>
+                <button id="save-columns" onclick="saveColumnSettings()">
+                    Save Columns
+                </button>
+                <!-- <button id="test-button" onclick="testFunction()">Test</button> -->
+            </div>
+            <div id="filter-counter">
+                <div>
+                    Rows:
+                    <span id="filter-rows-select">0</span> selected
+                    <span id="filter-table"
+                        >/ <span id="filter-rows-result">0</span> filtered /
+                        <span id="filter-rows-total">0</span> total</span
+                    >
+                </div>
+            </div>
+            <div id="filter-menu" class="not-visible">
+                <div class="tooltip-info">
+                    <i class="fas fa-info-circle"></i>
+                    <span class="tooltiptext-info">
+                        Filter Options:
+                        <ul>
+                            <li>
+                                Like: The "like" filter displays any rows with
+                                data that contains the specified string anywhere
+                                in the specified field (case insensitive)
+                            </li>
+                            <li>
+                                Keywords: The "keywords" filter displays any
+                                rows with data containing any space separated
+                                words in the specified string (case insensitive)
+                            </li>
+                            <li>
+                                Starts: The "starts" filter displays any rows
+                                with data that starts with the specified string
+                                (case insensitive)
+                            </li>
+                            <li>
+                                Ends: The "ends" filter displays any rows with
+                                data that ends with the specified string (case
+                                insensitive)
+                            </li>
+                            <li>
+                                RegEx: The "regex" displays rows that match a
+                                provided regular expression (case sensitive):
+                                <br />
+                                <ul>
+                                    <li>
+                                        Brackets:
+                                        <ul>
+                                            <li>
+                                                [abc]: Find any of the
+                                                characters between the brackets
+                                            </li>
+                                            <li>
+                                                [0-9]: Find any of the digits
+                                                between the brackets
+                                            </li>
+                                            <li>
+                                                (x|y): Find any of the
+                                                alternatives separated with "|"
+                                                (pipe)
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Quantifiers:
+                                        <ul>
+                                            <li>
+                                                n+: Matches any string that
+                                                contains at least one n
+                                            </li>
+                                            <li>
+                                                n*: Matches any string that
+                                                contains zero or more
+                                                occurrences of n
+                                            </li>
+                                            <li>
+                                                n?: Matches any string that
+                                                contains zero or one occurrences
+                                                of n
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+                <!-- <i class="fas fa-minus-square"></i> -->
+                <!-- <i class="fas fa-plus-square"></i> -->
+                <select id="filter-field"></select>
+                <select id="filter-type"></select>
+                <input
+                    id="filter-value"
+                    type="search"
+                    placeholder="value to filter"
+                />
+                <button id="filter-clear">Clear Filter</button>
+            </div>
+        </div>
+
+        <div id="table"></div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
