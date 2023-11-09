@@ -1,0 +1,17 @@
+{
+    "fixed_header": "Product-Number",
+    "headers": [
+        "Row_Nr",
+        "Level",
+        "Product-Number",
+        "Description",
+        "Revision",
+        "Date In",
+        "Date Out",
+        "Condition",
+        "Qty",
+        "Unit Of Measure",
+        "Unique Id",
+        "Parent"
+    ]
+}
