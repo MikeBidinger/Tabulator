@@ -15,20 +15,20 @@ Some included features:
 
 Data (JSON) format:
  - Tabular:
-```json
+```JSON
 [
-  {column_name: row_1_value},
-  {column_name: row_2_value}
+  {"column_name": "row_1_value"},
+  {"column_name": "row_2_value"}
 ]
 ```
  - Hierarchical:
-```json
+```JSON
 [
   {
-    column_name: row_parent_value,
-    _children: [
+    "column_name": "row_parent_value",
+    "_children": [
       {
-        column_name: row_child_value
+        "column_name": "row_child_value"
       }
     ]
   }
