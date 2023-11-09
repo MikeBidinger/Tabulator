@@ -14,9 +14,23 @@ Some included features:
  - RWD (responsive web design).
 
 Data (JSON) format:
+ - Tabular:
 ```
 [
   {column_name: row_1_value},
   {column_name: row_2_value}
+]
+```
+ - Hierarchical:
+```
+[
+  {
+    column_name: row_parent_value,
+    _children: [
+      {
+        column_name: row_child_value
+      }
+    ]
+  }
 ]
 ```
