@@ -28,7 +28,10 @@ Data (JSON) format:
     "column_name": "row_parent_value",
     "_children": [
       {
-        "column_name": "row_child_value"
+        "column_name": "row_child_1_value"
+      },
+      {
+        "column_name": "row_child_2_value"
       }
     ]
   }
