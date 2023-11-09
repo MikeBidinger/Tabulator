@@ -15,7 +15,7 @@ Some included features:
 
 File naming format for (JSON) data: [MODEL]_[Headers/Table/Hierarchy].json
 
-Data (JSON) format:
+[Data](https://github.com/MikeBidinger/Tabulator/tree/main/data) (JSON) format:
  - Headers data:
 ```JSON
 {
