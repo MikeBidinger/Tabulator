@@ -16,7 +16,7 @@ Some included features:
 Data (JSON) format:
 ```
 [
- {column_name: row_1_value},
- {column_name: row_2_value}
+  {column_name: row_1_value},
+  {column_name: row_2_value}
 ]
 ```
