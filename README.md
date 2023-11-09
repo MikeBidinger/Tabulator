@@ -16,14 +16,24 @@ Some included features:
 File naming format for (JSON) data: [MODEL]_[Headers/Table/Hierarchy].json
 
 Data (JSON) format:
- - Tabular:
+ - Headers data:
+```JSON
+{
+  "fixed_header": "column_name_1",
+  "headers": [
+    "column_name_1",
+    "column_name_2"
+  ]
+}
+```
+ - Tabular data:
 ```JSON
 [
   {"column_name": "row_1_value"},
   {"column_name": "row_2_value"}
 ]
 ```
- - Hierarchical:
+ - Hierarchical data:
 ```JSON
 [
   {
